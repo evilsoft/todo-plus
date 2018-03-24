@@ -4,10 +4,17 @@ module.exports = {
     "es6": true,
     "node": true
   },
-  "extends": "eslint:recommended",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
   },
+  "plugins": [ "react" ],
   "rules": {
     "array-bracket-spacing": [ "error", "always" ],
     "arrow-spacing": [ "error" ],

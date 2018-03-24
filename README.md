@@ -7,24 +7,24 @@ React and Redux. We will *very* loosely follow the
 state transitions using the [State ADT][state-docs] from the
 [crocks ADT library][crocks].
 
-## Using This Repository
-In order to make things easy to follow along at home, this repo organizes the
-sessions into branches. Each session will have its own branch, which is branched
-off the previous session. As a viewer, you are able to check out a branch which
-will be  available after each session. This allows you to check out the previous
-branch and follow along, or diverge and experiment with your own ideas and
-intuitions.
+## Practical ADTs -- Todo+ (Part 0x00)
+A series that takes the simple Redux Todo Application, but builds it using ADTs
+to capture control flow and behavior of our Application State. We will be
+implemented the application from the ground up using `React`, `Redux` and
+`crocks` for ADTs.
 
-It is recommend that you clone this repository down to follow along on your
-local environment. Once you have this project on your box, just pull down
-the repo from `master` and checkout the branch you are interested in.
+In this portion we will be configuring our environment to work with React both
+for eslint and our build system.  Once built out, we will throw together a
+simple UI with no functionality just to get us started. And we will finish up
+with getting Redux to work with the State ADT from crocks.
 
-Below is a list of each of the sessions and their respective branches, including
-a link to the video:
-
-| session | branch | video |
-| --- | --- | --- |
-| Practical ADTs -- Todo+ (Part 0x00) | [0x00][code-00] | [YouTube][vid-00]
+Links:
+* [Build System](https://github.com/evilsoft/simply-evil-js)
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/basics/example-todo-list)
+* [React Linting Plugin](https://github.com/yannickcr/eslint-plugin-react)
+* [React Babel Preset](https://babeljs.io/docs/plugins/preset-react/)
+* [crocks](https://evilsoft.github.io/crocks/docs/getting-started.html)
 
 ## Useful Commands
 
