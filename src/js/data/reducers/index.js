@@ -1,3 +1,4 @@
+import execWith from 'crocks/State/execWith'
 import todo from './todo'
 
 import { combineReducers } from '../helpers'
@@ -8,6 +9,7 @@ const reducers = combineReducers([
 
 const reducer = (prevState, action) =>
   reducers(action)
-    .execWith(prevState)
+    .map(execWith(prevState))
+    .option(prevState)
 
 export default reducer

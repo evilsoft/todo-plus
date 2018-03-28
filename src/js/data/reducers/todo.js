@@ -1,15 +1,18 @@
-import { toggle } from '../models/todo'
+import { add, toggle } from '../models/todo'
+import { createAction, createReducer } from '../helpers'
 
 const TOGGLE_TODO = 'TOGGLE_TODO'
+const ADD_TODO = 'ADD_TODO'
 
-export const toggleTodo = payload =>
-  ({ type: TOGGLE_TODO, payload })
+export const toggleTodo =
+  createAction(TOGGLE_TODO)
 
-function todo({ type, payload }) {
-  switch(type) {
-  case TOGGLE_TODO:
-    return toggle(payload)
-  }
-}
+export const addTodo =
+  createAction(ADD_TODO)
 
-export default todo
+const reducer = createReducer({
+  [TOGGLE_TODO]: toggle,
+  [ADD_TODO]: add
+})
+
+export default reducer

@@ -7,16 +7,21 @@ React and Redux. We will *very* loosely follow the
 state transitions using the [State ADT][state-docs] from the
 [crocks ADT library][crocks].
 
-## Practical ADTs -- Todo+ (Part 0x00)
-A series that takes the simple Redux Todo Application, but builds it using ADTs
-to capture control flow and behavior of our Application State. We will be
-implemented the application from the ground up using `React`, `Redux` and
-`crocks` for ADTs.
+## Practical ADTs -- Todo+ (Part 0x01)
 
-In this portion we will be configuring our environment to work with React both
-for eslint and our build system.  Once built out, we will throw together a
-simple UI with no functionality just to get us started. And we will finish up
-with getting Redux to work with the State ADT from crocks.
+After an overview of the reducer pattern we have so far, we add a couple helpers
+to bring us closer to our desired flow. With the new functions `createAction`
+and `createReducer` now at our disposal, we can clean up both our
+`combineReducers` function and our root reducer due to the introduction of
+a `Maybe` added to our `createReducer` flow.
+
+We then continue, by adding a form that will allow us to create new Todos and
+style it to look fairly decent. Using this new form, we create an `add` function
+in our todo, complete with a way to provide defaults for any missing attributes
+on the todo record we wish to add.
+
+Now that all of the pieces are in place, well finish it off by mapping our
+`ADD_TODO` action to our `add` model function inside of out todo reducer.
 
 Links:
 * [Build System](https://github.com/evilsoft/simply-evil-js)
@@ -52,6 +57,3 @@ results on:
 [example]: https://redux.js.org/basics/example-todo-list
 [state-docs]: https://evilsoft.github.io/crocks/docs/crocks/State.html
 [crocks]: https://github.com/evilsoft/crocks
-
-[code-00]: https://github.com/evilsoft/todo-plus/tree/0x00
-[vid-00]: https://youtu.be/vaKD2-eG9-g
