@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import classnames from 'classnames'
 
 function Todo({ todo, onClick }) {
-  const { title, completed } = todo
+  const { completed, id, title } = todo
 
   const classes = classnames('todo', {
     'todo--completed': completed
@@ -12,13 +12,14 @@ function Todo({ todo, onClick }) {
 
   return <li
     className={classes}
-    onClick={() => onClick(title)}
+    onClick={() => onClick(id)}
   >{title}</li>
 }
 
 Todo.propTypes = {
   onClick: PropTypes.func,
   todo: PropTypes.shape({
+    id: PropTypes.number,
     title: PropTypes.string,
     completed: PropTypes.bool,
   })

@@ -26,7 +26,7 @@ const mapState =
   ({ todos }) => ({ todos })
 
 const mapDispatch = dispatch => ({
-  toggleTodo: title => dispatch(toggleTodo({ title }))
+  toggleTodo: id => dispatch(toggleTodo({ id }))
 })
 
 export default connect(mapState, mapDispatch)(TodoList)

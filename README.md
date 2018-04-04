@@ -7,16 +7,25 @@ React and Redux. We will *very* loosely follow the
 state transitions using the [State ADT][state-docs] from the
 [crocks ADT library][crocks].
 
-## Practical ADTs -- Todo+ (Part 0x00)
-A series that takes the simple Redux Todo Application, but builds it using ADTs
-to capture control flow and behavior of our Application State. We will be
-implemented the application from the ground up using `React`, `Redux` and
-`crocks` for ADTs.
+## Practical ADTs -- Todo+ (Part 0x02)
 
-In this portion we will be configuring our environment to work with React both
-for eslint and our build system.  Once built out, we will throw together a
-simple UI with no functionality just to get us started. And we will finish up
-with getting Redux to work with the State ADT from crocks.
+As we will be working more and more with how data flows through Redux, it makes
+sense to get the dev tools extension connected. Now that we will have an enhancer
+we will make a new `store` file to configure and provide our desired store.
+
+Next up we want to do our best to move any internal state into our `AppState`
+that is managed by Redux. In order to get that, we add a `nextId` namespace to
+our `AppState` and define a model file to hold the state transition needed to
+manage the state at that namespace.
+
+Using some `Applicative` "magic", we now have a way to bypass Redux and combine
+our lazy `State` instances so that can transition the overall state between our
+models. All that is left is to update our `add` model function to accommodate.
+
+Now to remove the `title` bug we introduced early on, we build a more robust
+means to build out predicates that match. We build out two new helpers to
+facilitate a simple query language, `propSatisfies` and `where`. Using our new
+functions we move some more bits around to get our new query style in the mix.
 
 Links:
 * [Build System](https://github.com/evilsoft/simply-evil-js)
@@ -52,6 +61,3 @@ results on:
 [example]: https://redux.js.org/basics/example-todo-list
 [state-docs]: https://evilsoft.github.io/crocks/docs/crocks/State.html
 [crocks]: https://github.com/evilsoft/crocks
-
-[code-00]: https://github.com/evilsoft/todo-plus/tree/0x00
-[vid-00]: https://youtu.be/vaKD2-eG9-g
