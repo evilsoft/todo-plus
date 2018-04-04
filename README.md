@@ -25,6 +25,8 @@ a link to the video:
 | session | branch | video |
 | --- | --- | --- |
 | Practical ADTs -- Todo+ (Part 0x00) | [0x00][code-00] | [YouTube][vid-00]
+| Practical ADTs -- Todo+ (Part 0x01) | [0x01][code-01] | [YouTube][vid-01]
+| Practical ADTs -- Todo+ (Part 0x02) | [0x02][code-02] | [YouTube][vid-02]
 
 ## Useful Commands
 
@@ -55,3 +57,9 @@ results on:
 
 [code-00]: https://github.com/evilsoft/todo-plus/tree/0x00
 [vid-00]: https://youtu.be/vaKD2-eG9-g
+
+[code-01]: https://github.com/evilsoft/todo-plus/tree/0x01
+[vid-01]: https://youtu.be/ofStWMQQGGY
+
+[code-02]: https://github.com/evilsoft/todo-plus/tree/0x02
+[vid-02]: https://youtu.be/udL5s4G-aCk
