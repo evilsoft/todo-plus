@@ -1,0 +1,22 @@
+.button {
+  .spacing(1rem, 2rem);
+  color: darken(@silver, 50%);
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid @silver;
+
+  &--disabled {
+    cursor: default;
+    .white;
+    .bg-red;
+  }
+
+  &--submit {
+    .bg-blue;
+    .white;
+    .bold;
+    border-color: @blue;
+    border-right-color: @navy;
+    border-bottom-color: @navy;
+  }
+}

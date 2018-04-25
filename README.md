@@ -7,25 +7,7 @@ React and Redux. We will *very* loosely follow the
 state transitions using the [State ADT][state-docs] from the
 [crocks ADT library][crocks].
 
-## Practical ADTs -- Todo+ (Part 0x02)
-
-As we will be working more and more with how data flows through Redux, it makes
-sense to get the dev tools extension connected. Now that we will have an enhancer
-we will make a new `store` file to configure and provide our desired store.
-
-Next up we want to do our best to move any internal state into our `AppState`
-that is managed by Redux. In order to get that, we add a `nextId` namespace to
-our `AppState` and define a model file to hold the state transition needed to
-manage the state at that namespace.
-
-Using some `Applicative` "magic", we now have a way to bypass Redux and combine
-our lazy `State` instances so that can transition the overall state between our
-models. All that is left is to update our `add` model function to accommodate.
-
-Now to remove the `title` bug we introduced early on, we build a more robust
-means to build out predicates that match. We build out two new helpers to
-facilitate a simple query language, `propSatisfies` and `where`. Using our new
-functions we move some more bits around to get our new query style in the mix.
+## Practical ADTs -- Todo+ (Part 0x03)
 
 Links:
 * [Build System](https://github.com/evilsoft/simply-evil-js)

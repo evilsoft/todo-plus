@@ -1,5 +1,6 @@
 import execWith from 'crocks/State/execWith'
 import todo from './todo'
+import filterTodos from './filterTodos'
 
 import { combineReducers } from '../helpers'
 
@@ -8,7 +9,8 @@ import { combineReducers } from '../helpers'
 
 // reducers :: Reducer
 const reducers = combineReducers([
-  todo
+  todo,
+  filterTodos
 ])
 
 // reducer :: (AppState, Action) -> AppState
