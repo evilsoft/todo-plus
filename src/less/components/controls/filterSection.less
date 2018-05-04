@@ -1,0 +1,17 @@
+.filterSection {
+  display: flex;
+
+  &__link {
+    flex: 1;
+    margin-left: 0.5rem;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:disabled {
+      .white;
+      .bg-red;
+    }
+  }
+}

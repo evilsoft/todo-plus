@@ -6,7 +6,7 @@
   "license": "ISC",
   "scripts": {
     "test": "npm run lint",
-    "lint": "eslint src/js",
+    "lint": "eslint --ext js,jsx src/js",
     "html": "pug src/pages -o dev -w",
     "bundle": "webpack-dev-server",
     "serve": "browser-sync start --config bs.config.js",

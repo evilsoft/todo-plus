@@ -1,8 +1,10 @@
 import React from 'react'
 
-import FilterLink from './FilterLink.jsx'
+import FilterSection from './controls/FilterSection.jsx'
 
-import { filters } from '../data/reducers/filterTodos'
+import { filters, updateTodoFilter } from '../data/reducers/filterTodos'
+
+import { Pair } from '../helpers'
 
 const {
   SHOW_ALL,
@@ -10,11 +12,20 @@ const {
   SHOW_ACTIVE
 } = filters
 
+// statusFilters :: Pair String String
+const statusFilters = [
+  Pair(SHOW_ALL, 'All'),
+  Pair(SHOW_COMPLETED, 'Completed'),
+  Pair(SHOW_ACTIVE, 'Active'),
+]
+
 const Filters = () =>
   <div className="filters">
-    <FilterLink filter={SHOW_ALL} className="filters__link">All</FilterLink>
-    <FilterLink filter={SHOW_COMPLETED} className="filters__link">Completed</FilterLink>
-    <FilterLink filter={SHOW_ACTIVE} className="filters__link">Active</FilterLink>
+    <FilterSection
+      applyFilter={updateTodoFilter}
+      filterState="todoFilter"
+      filters={statusFilters}
+    />
   </div>
 
 export default Filters

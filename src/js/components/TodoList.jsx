@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import propEq from 'crocks/predicates/propEq'
 
 import { connect } from 'react-redux'
 import { toggleTodo } from '../data/reducers/todo'
@@ -8,8 +7,9 @@ import { filters } from '../data/reducers/filterTodos'
 
 import Todo from './Todo.jsx'
 
+import { propEq } from '../helpers'
+
 const {
-  SHOW_ALL,
   SHOW_COMPLETED,
   SHOW_ACTIVE
 } = filters

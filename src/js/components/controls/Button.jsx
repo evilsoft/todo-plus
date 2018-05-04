@@ -22,6 +22,7 @@ Button.defaultProps = {
   children: '',
   className: '',
   disabled: false,
+  onClick: Function.prototype,
   type: 'button'
 }
 
@@ -29,6 +30,7 @@ Button.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   disabled: PropTypes.bool,
+  onClick: PropTypes.func,
   type: PropTypes.string
 }
 

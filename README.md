@@ -7,7 +7,7 @@ React and Redux. We will *very* loosely follow the
 state transitions using the [State ADT][state-docs] from the
 [crocks ADT library][crocks].
 
-## Practical ADTs -- Todo+ (Part 0x03)
+## Practical ADTs -- Todo+ (Part 0x04)
 
 Links:
 * [Build System](https://github.com/evilsoft/simply-evil-js)
