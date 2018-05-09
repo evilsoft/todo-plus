@@ -21,6 +21,10 @@ import toPairs from 'crocks/Pair/toPairs'
 import when from 'crocks/logic/when'
 import unless from 'crocks/logic/unless'
 
+import { lensPath, lensProp, not, over } from '../helpers'
+
+export { State, compose, lensPath, lensProp, not, over }
+
 // Action a :: { type: String, payload: a }
 // Reducer :: Action a -> Maybe (State AppState ())
 

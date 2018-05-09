@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import AddTodo from './AddTodo.jsx'
+import Header from './Header.jsx'
 import Filters from './Filters.jsx'
 import TodoList from './TodoList.jsx'
 
 const App = () =>
   <main className="app">
-    <AddTodo />
+    <Header />
     <Filters />
     <TodoList />
   </main>

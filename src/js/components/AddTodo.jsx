@@ -49,8 +49,9 @@ class AddTodo extends Component {
         />
         <Button
           className="addTodo__button"
+          icon="plus"
           type="submit"
-        >Add Todo</Button>
+        />
       </form>
     )
   }

@@ -14,7 +14,12 @@ const data = {
     { id: 1, title: 'Hug Unicorn', completed: false },
     { id: 2, title: 'Mess With Texas', completed: false },
     { id: 3, title: 'Do Laundry', completed: true }
-  ]
+  ],
+  ui: {
+    filterGroups: {
+      status: false
+    }
+  }
 }
 
 const composeEnhancers =
