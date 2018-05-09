@@ -29,6 +29,7 @@ a link to the video:
 | Practical ADTs -- Todo+ (Part 0x02) | [0x02][code-02] | [YouTube][vid-02]
 | Practical ADTs -- Todo+ (Part 0x03) | [0x03][code-03] | [YouTube][vid-03]
 | Practical ADTs -- Todo+ (Part 0x04) | [0x04][code-04] | [YouTube][vid-04]
+| Practical ADTs -- Todo+ (Part 0x05) | [0x05][code-05] | [YouTube][vid-05]
 
 ## Useful Commands
 
@@ -71,3 +72,6 @@ results on:
 
 [code-04]: https://github.com/evilsoft/todo-plus/tree/0x04
 [vid-04]: https://youtu.be/r3rq6ipBsgs
+
+[code-05]: https://github.com/evilsoft/todo-plus/tree/0x05
+[vid-05]: https://youtu.be/geQjDUnBQG8
